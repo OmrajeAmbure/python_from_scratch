@@ -56,3 +56,20 @@ print(l3)
 l2 = l;
 print(l2 in l) # False;
 print(l2);
+"""
+How Python Stores List Elements?
+
+In Python, a list doesn’t store actual values directly. Instead, it stores references (pointers) to objects in memory. This means numbers, strings and booleans are separate objects in memory and the list just keeps their addresses.
+
+That’s why modifying a mutable element (like another list or dictionary) can change the original object, while immutables remain unaffected.
+"""
+a = [10, 20, "GfG", 40, True]
+print(a)
+print(a[0])
+print(a[1])
+print(a[2])
+
+# Explanation:
+# The list a contains an integer (10, 20 and 40), a string ("GfG") and a boolean (True).
+# Elements are accessed using indexing (a[0], a[1], etc.).
+# Each element keeps its original type.
