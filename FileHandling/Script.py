@@ -41,11 +41,11 @@ finally:
                 
 """
 try:
-        f = open('example.txt','a');
+        f = open('example.txt','w+');
 except OSError as e:
         print(e);
 else:
-        f.writelines(" i am aids student at isbm college of Eng.");
+        f.writelines(" Looking For New Job");
 finally:
         f.close();
         print("Is Closed?", f.closed)
