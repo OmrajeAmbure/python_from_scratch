@@ -8,8 +8,10 @@ class Solution:
         print(abs(upper));
         if abs(n - lower) < abs(n - upper):
             return lower
-        else:
+        elif abs(n - lower) > abs(n - upper):
             return upper
+        else:
+            return max(lower,upper,key=abs);
 
 if __name__=="__main__":
     s = Solution();
